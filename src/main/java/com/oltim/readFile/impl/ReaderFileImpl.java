@@ -21,6 +21,6 @@ public class ReaderFileImpl implements ReaderFile {
         } catch (IOException | NumberFormatException e) {
             System.out.println("File reading error " + e.getMessage());
         }
-        return  Optional.ofNullable(listNumber).orElseGet(() -> Collections.singletonList(0));
+        return Optional.ofNullable(listNumber).orElseGet(() -> Collections.singletonList(0));
     }
 }
